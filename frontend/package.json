@@ -1,0 +1,45 @@
+{
+    "name": "apify-fs-hiring-task-frontend",
+    "private": true,
+    "version": "0.1.0",
+    "description": "Frontend React application for interview task for FS Developer position at Apify",
+    "type": "module",
+    "scripts": {
+        "build": "tsc -b && vite build",
+        "cypress": "npx cypress open",
+        "dev": "vite",
+        "lint": "eslint \"./{src,test}/**/*.{ts,tsx}\"",
+        "lint:fix": "eslint \"./{src,test}/**/*.{ts,tsx}\" --fix",
+        "preview": "vite preview",
+        "test:e2e": "npx cypress run --e2e"
+    },
+    "dependencies": {
+        "@tanstack/react-query": "^5.90.20",
+        "clsx": "^2.1.1",
+        "react": "^19.1.0",
+        "react-dom": "^19.1.0",
+        "styled-components": "^6.1.17"
+    },
+    "devDependencies": {
+        "@apify/eslint-config": "1.0.0",
+        "@apify/tsconfig": "0.1.1",
+        "@cypress/react": "^9.0.1",
+        "@eslint/js": "^9.25.1",
+        "@types/react": "^19.1.2",
+        "@types/react-dom": "^19.1.2",
+        "@types/react-query": "^1.2.8",
+        "@vitejs/plugin-react-swc": "^3.9.0",
+        "cypress": "^14.3.2",
+        "eslint": "^9.25.1",
+        "eslint-config-prettier": "^10.1.2",
+        "eslint-plugin-prettier": "^5.2.6",
+        "eslint-plugin-react-hooks": "^5.2.0",
+        "eslint-plugin-react-refresh": "^0.4.20",
+        "globals": "^16.0.0",
+        "prettier": "^3.5.3",
+        "typescript": "^5.8.3",
+        "typescript-eslint": "^8.31.0",
+        "vite": "^6.3.3",
+        "vite-plugin-svgr": "^4.3.0"
+    }
+}
