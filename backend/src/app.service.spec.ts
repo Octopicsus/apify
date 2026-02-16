@@ -1,7 +1,8 @@
 import { hrtime } from 'node:process';
 
-import { AppService, SYMBOLS } from './app.service';
 import { BadRequestException } from '@nestjs/common';
+
+import { AppService, SYMBOLS } from './app.service';
 
 describe('AppService', () => {
     let appService: AppService;
@@ -11,7 +12,6 @@ describe('AppService', () => {
     });
 
     describe('generateMatrix()', () => {
-
         it('size 0 throws BadRequestException', () => {
             expect(() => appService.generateMatrix(0, Date.now())).toThrow(BadRequestException);
         });
